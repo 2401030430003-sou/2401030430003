@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Strip Creator - Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">comic strip</div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="./dashboard.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="./mycomics.html"><i class="fa-solid fa-book-open"></i> My Comics</a>
+                    </li>
+                    <li>
+                        <a href="./create-new.html"><i class="fa-solid fa-plus"></i> Create New</a>
+                    </li>
+                    <li>
+                        <a href="./settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>Welcome Back !</h1>
+                <button class="create-btn" onclick="window.location.href='./create-new.html'">Create New Comic</button>
+            </div>
+
+            <div class="preview-card">
+                <div class="preview-area">
+                    <p>Preview</p>
+                </div>
+                <div class="preview-info">
+                    <p>Recent Project</p>
+                    <p>Last Edited:</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

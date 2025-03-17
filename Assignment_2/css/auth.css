@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.login-btn {
+    padding: 8px 24px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.welcome-text {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: -2px;
+}
+
+.welcome-text p {
+    color: #666;
+    font-size: 22px;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #666;
+    text-decoration: none;
+}
+
+.right-section {
+    width: 50%;
+    background: url('assets/login.png') center/cover;
+    height: 100vh; /* Ensure image section takes full height */
+    position: fixed; /* Fix the position of the image */
+    right: 0; /* Align to the right side */
+    top: 0; /* Align to the top */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Strip Creator - My Comics</title>
+    <link rel="stylesheet" href="../css/mycomics.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">comic strip</div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="./dashboard.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="./mycomics.html"><i class="fa-solid fa-book-open"></i> My Comics</a>
+                    </li>
+                    <li>
+                        <a href="create-new.html"><i class="fa-solid fa-plus"></i> Create New</a>
+                    </li>
+                    <li>
+                        <a href="./settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>My Comics</h1>
+                <a href="./create-new.html" class="create-btn">Create New Comic</a>
+            </div>
+
+            <div class="view-options">
+                <button class="view-btn active">Grid View</button>
+                <button class="view-btn">List View</button>
+            </div>
+
+            <div class="comics-grid">
+                <div class="comic-card">
+                    <div class="comic-preview">
+                        <img src="../assets/mycomic1.png" alt="Comic Preview">
+                    </div>
+                    <div class="comic-info">
+                        <h3>Recent Project: Comic</h3>
+                        <p>Last Edited: 30 Jan 2025</p>
+                    </div>
+                </div>
+
+                <div class="comic-card">
+                    <div class="comic-preview">
+                        <img src="../assets/demon.png" alt="The Demons">
+                    </div>
+                    <div class="comic-info">
+                        <h3>The Demons</h3>
+                        <p>Last Edited: 25 Jan 2025</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
